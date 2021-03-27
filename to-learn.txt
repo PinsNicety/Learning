@@ -1,0 +1,2 @@
+JAVASCRIPT:
+- watch more about the difference between VAR and LET
