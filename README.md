@@ -1,0 +1,2 @@
+- Allows me to keep a list of items I need to research further.
+- Is this a project idea?
