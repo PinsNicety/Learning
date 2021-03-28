@@ -5,18 +5,25 @@ let machineActive = false;
 
 // Edit below
 if (machineActive) {
-    if (score < 20) {
-        response = "Terrible....FAIL!";
-    } else if (score < 40) {
-        response = "You know a couple things";
-    } else if (score < 70) {
-        response = "Passable";
-    } else if (score <90) {
-        response = "Great Score";
-    }else if (score < 101) {
-        response = "What and amazing Score";
-    } else {
-        response = "You are off the charts";
+    switch (true) {
+        case (score < 20):
+            response = "Terrible....FAIL!";
+            break;
+        case (score < 40):
+            response = "You know a couple things";
+            break;
+        case (score < 70):
+            response = "Passable";
+            break;
+        case (score < 90):
+            response = "Great Score";
+            break;
+        case (score < 101):
+            response = "What and amazing Score";
+            break;
+        case (score > 100):
+            response = "You are off the charts";
+            break; 
     }
 } else {
     score = 0;
