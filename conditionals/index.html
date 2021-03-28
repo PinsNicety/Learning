@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <meta charset="UTF-8"/>
+</head>
+<body>
+  <p>Please Log-In</p>
+  <button onClick="logIn()">Log-In</button>
+  <p id="result"></p>
+  <script>
+    function logIn() {
+      let userName = prompt('Please enter your UserName:');
+      if (userName === 'Admin') {
+        let password = prompt('Please enter your password:');
+        if (password === 'TheMaster') {
+          document.getElementById('result').innerHTML = 'Welcome!';
+        } else if (password === '' || password === null) {
+          document.getElementById('result').innerHTML = 'Cancelled';
+        } else {
+          document.getElementById('result').innerHTML = 'Wrong Password';;
+        }
+      } else if (userName === '' || userName === null) {
+        document.getElementById('result').innerHTML = 'Cancelled';
+      } else {
+        document.getElementById('result').innerHTML = 'I don\'t know you.';
+      }
+    }
+  </script>
+</body>
+</html>
